@@ -2,7 +2,7 @@
 
 // Define some constants
 // On Second parameter add your email
-define( "RECIPIENT_EMAIL", "muhibbur@gmail.com" );
+define( "RECIPIENT_EMAIL", "lydonstaubwedding@gmail.com" );
 
 // Read the form values
 $success = false;
@@ -12,7 +12,7 @@ $guest = $_POST['guest'];
 $attend = $_POST['attend'];
 
 // Setting Up Email Subject
-$subject = 'A mail Sended by ' . $name ;
+$subject = 'A mail Sent by ' . $name ;
 // Setting Up Email Message
 $message = $name . ' will attend to the ' . $attend . ' event as ' . $guest ;
 

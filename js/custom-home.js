@@ -22,8 +22,8 @@ var map;
 
 map = new GMaps({
 	el: '#gmap',
-	lat: 34.056772,
-	lng: -118.244174,
+	lat: 39.528239,
+	lng: -75.135819,
 	scrollwheel:false,
 	zoom: 16,
 	zoomControl : true,
@@ -36,26 +36,26 @@ map = new GMaps({
 
 var image = '';
 map.addMarker({
-	lat: 34.056772,
-	lng: -118.244174,
+	lat: 39.528239,
+	lng: -75.135819,
 	infoWindow: {
-	  content: '<p class="map-info"><strong>Los Angeles</strong> <br/> Angel Street 146, B16 <br/> (058) 569 3668</p>'
+	  content: '<p class="map-info"><strong>Running Deer Golf Club</strong> <br/> 1111 Parvin Mill Rd<br/> Pittsgrove Township, NJ</p>'
 	}
 });
-map.addMarker({
-	lat: 34.056459,
-	lng: -118.247132,
-	infoWindow: {
-	  content: '<p class="map-info"><strong>Los Angeles</strong> <br/> Olvera Street <br/> (058) 569 3668</p>'
-	}
-});
-map.addMarker({
-	lat: 34.057469,
-	lng: -118.237551,
-	infoWindow: {
-	  content: '<p class="map-info"><strong>Los Angeles</strong> <br/> Grand Park <br/> (058) 569 3668</p>'
-	}
-});
+// map.addMarker({
+// 	lat: 34.056459,
+// 	lng: -118.247132,
+// 	infoWindow: {
+// 	  content: '<p class="map-info"><strong>Los Angeles</strong> <br/> Olvera Street <br/> (058) 569 3668</p>'
+// 	}
+// });
+// map.addMarker({
+// 	lat: 34.057469,
+// 	lng: -118.237551,
+// 	infoWindow: {
+// 	  content: '<p class="map-info"><strong>Los Angeles</strong> <br/> Grand Park <br/> (058) 569 3668</p>'
+// 	}
+// });
 
 
 var styles = [ 
@@ -150,7 +150,7 @@ function Scroll() {
 
 // add your countdown wrapper and countdown timer
 // first parameter is countdown wrapper and 2nd parameter countdown finisher time
-var futuredate=new cdtime("countdowncontainer", "August 20, 2015 04:30:00");
+var futuredate=new cdtime("countdowncontainer", "March 30, 2019 05:00:00");
 futuredate.displaycountdown("days", formatresults);
 
 
