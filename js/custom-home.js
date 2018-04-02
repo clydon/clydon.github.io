@@ -233,38 +233,38 @@ attend.on('focus', function () {
 
 
 // making validation while form submission
-$('.contact-form').on('submit', function () {
+// $('.contact-form').on('submit', function () {
 
 
-	var email_val = email.val();
+// 	var email_val = email.val();
 
-	if (name.val() === '') {
-		name.addClass('error');
-		return false;
-	}
-	else if ( validateEmail(email_val) === false ) {
-		email.addClass('error');
-		return false;
-	}
-	else if ( guest.val() === '' ) {
-		guest.addClass('error');
-		return false;
-	}
-	else if ( attend.val() === '' ) {
-		attend.addClass('error');
-		return false;
-	}
-	else if (name.val()!=='' && guest.val()!=='' && attend.val()!=='' &&  validateEmail(email_val)==true) {
+// 	if (name.val() === '') {
+// 		name.addClass('error');
+// 		return false;
+// 	}
+// 	else if ( validateEmail(email_val) === false ) {
+// 		email.addClass('error');
+// 		return false;
+// 	}
+// 	else if ( guest.val() === '' ) {
+// 		guest.addClass('error');
+// 		return false;
+// 	}
+// 	else if ( attend.val() === '' ) {
+// 		attend.addClass('error');
+// 		return false;
+// 	}
+// 	else if (name.val()!=='' && guest.val()!=='' && attend.val()!=='' &&  validateEmail(email_val)==true) {
 
-		// sending value with ajax request
-		$.post('sendemail.php', $(this).serialize(), function (response) {
-			$('.contact-form').append(response);
-		});
-		$(this).find('input').val('');
+// 		// sending value with ajax request
+// 		$.post('sendemail.php', $(this).serialize(), function (response) {
+// 			$('.contact-form').append(response);
+// 		});
+// 		$(this).find('input').val('');
 
-		return false;
-	}
-});
+// 		return false;
+// 	}
+// });
 
 
 
