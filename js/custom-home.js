@@ -194,6 +194,8 @@ $(document).on('ready', function() {
 ////////////// 5. contact form validation ////////
 /////////////////////////////////////////////////
 
+var submitted = false;
+
 
 // Function that validates email address through a regular expression.
 function validateEmail(email_val) {

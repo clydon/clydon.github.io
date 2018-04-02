@@ -357,8 +357,9 @@
 					<div class="rsvp_wrap">
 						<h2>SIGN YOUR RSVP</h2>
 
-
-						<form class="contact-form" action="https://docs.google.com/forms/d/e/1FAIpQLSfCSAUZBTimYgcGDo0lw-_vXTyPHs_ggl0c8ZLBgDy5uRQ_iA/formResponse">
+						<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"     
+						onload="if(submitted) {window.location='#';}"></iframe>
+						<form class="contact-form" action="https://docs.google.com/forms/d/e/1FAIpQLSfCSAUZBTimYgcGDo0lw-_vXTyPHs_ggl0c8ZLBgDy5uRQ_iA/formResponse" method="post" target="hidden_iframe" onsubmit="submitted=true;">
 							<p><input type="text" name="entry.326183837" class="name" placeholder="Full Name*"></p>
 							<select class="attend" name="entry.1321249259">
 								<option value="">Can you attend?*</option>
