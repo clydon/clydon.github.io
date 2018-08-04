@@ -31,7 +31,8 @@ map = new GMaps({
 	streetViewControl : true,
 	mapTypeControl: false,
 	overviewMapControl: false,
-	clickable: true
+	clickable: true,
+	key: 'AIzaSyA3_Md9LhDtHGql3z2uypjScDm5BVfUs9E'
 });
 
 var image = '';
@@ -58,7 +59,7 @@ map.addMarker({
 // });
 
 
-var styles = [ 
+var styles = [
 
 {
 	"featureType": "road",
@@ -99,7 +100,7 @@ var styles = [
 map.addStyle({
 	styledMapName:"Styled Map",
 	styles: styles,
-	mapTypeId: "map_style"  
+	mapTypeId: "map_style"
 });
 
 map.setStyle("map_style");
@@ -113,9 +114,9 @@ map.setStyle("map_style");
 
 $(window).on('scroll', function(event) {
 	Scroll();
-});	
+});
 
-$('.main_navigation ul > li > a').click(function() {  
+$('.main_navigation ul > li > a').click(function() {
 	$(this).addClass('active');
 	$('html, body').animate({scrollTop: $(this.hash).offset().top -145}, 1000);
 	return false;
@@ -136,7 +137,7 @@ function Scroll() {
 		if ( winTop > contentTop[i] - rangeTop ){
 			$('.main_navigation > ul > li.scroll')
 			.removeClass('active')
-			.eq(i).addClass('active');			
+			.eq(i).addClass('active');
 		}
 	})
 
@@ -150,7 +151,7 @@ function Scroll() {
 
 // add your countdown wrapper and countdown timer
 // first parameter is countdown wrapper and 2nd parameter countdown finisher time
-var futuredate=new cdtime("countdowncontainer", "March 30, 2019 05:00:00");
+var futuredate=new cdtime("countdowncontainer", "March 30, 2019 00:00:00");
 futuredate.displaycountdown("days", formatresults);
 
 
@@ -161,30 +162,34 @@ futuredate.displaycountdown("days", formatresults);
 ////////////////////////////////////////////////////////
 
 
-$(document).on('ready', function() { 
-  
-  //pretty photo activator
-  $("a[data-gal^='prettyPhoto']").prettyPhoto();    
+$(document).on('ready', function() {
 
-  var i =0; 
+  //pretty photo activator
+  $("a[data-gal^='prettyPhoto']").prettyPhoto();
+
+  var i =0;
   var images = [
   	// add your image url here
-	'images/slider/image-1.jpg',
-	'images/slider/image-2.jpg',
-	'images/slider/image-3.jpg',
-	'images/slider/image-4.jpg'
+	// 'images/slider/slider-1.jpg',
+	'images/slider/slider-2.jpg',
+	'images/slider/slider-3.jpg',
+	'images/slider/slider-4.jpg',
+	'images/slider/slider-5.jpg',
+	'images/slider/slider-6.jpg',
+	'images/slider/slider-1.jpg'
+	// 'images/slider/image-1.jpg',
+	// 'images/slider/image-2.jpg',
+	// 'images/slider/image-3.jpg',
+	// 'images/slider/image-4.jpg'
   ];
   // grabing the container of slider
   var image = $('#slider');
   //Change image at regular intervals
-  setInterval(function(){   
-   image.fadeOut(500, function () {
-   image.css('background-image', 'url(' + images [i++] +')');
-   image.fadeIn(500);
-   });
+  setInterval(function(){
+      image.css('background-image', 'url(' + images [i++] +')');
    if(i == images.length)
     i = 0;
-  }, 6000);            
+  }, 6000);
  });
 
 
@@ -214,7 +219,7 @@ var guest = $('.contact-form input.guest');
 var attend = $('.contact-form input.attend');
 var email = $('.contact-form input.email');
 
-// removing response 
+// removing response
 name.on('focus', function () {
 	name.removeClass('error');
 	$('.contact-form p.output').remove();

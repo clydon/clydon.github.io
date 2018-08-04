@@ -209,7 +209,8 @@ button:hover:before, .single_blog_post .readmore:hover:before, button:focus:befo
 
 .section_title_wrap {
 	text-align: center;
-	padding: 125px 0;
+	padding-top: 125px;
+	padding-bottom: 40px;
 }
 .section_title {
 	font-size: 36px;
@@ -402,7 +403,7 @@ button:hover:before, .single_blog_post .readmore:hover:before, button:focus:befo
  =========================*/
 
 #slider {
-	background-image: url(images/background/slider-bg.jpg);
+	background-image: url(images/slider/slider-1.jpg);
 	background-repeat: no-repeat;
 	background-position: center center;
 	-webkit-background-size: cover;
@@ -834,7 +835,7 @@ button:hover:before, .single_blog_post .readmore:hover:before, button:focus:befo
  =========================*/
 
 #qoute {
-	background: url(images/background/qoute-bg.jpg) center center no-repeat;
+	background: url(images/proposal_l.png) center center no-repeat;
 	-webkit-background-size: cover;
 	background-size: cover;
 	text-align: center;
