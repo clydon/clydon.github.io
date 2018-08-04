@@ -385,7 +385,7 @@
 						<h2>SIGN YOUR RSVP</h2>
 
 						<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"     
-						onload="if(submitted) {window.location='#';}"></iframe>
+						onload="if(typeof submitted != 'undefined' && submitted) {window.location='#'; document.getElementById('rsvp_submit').disabled = true; document.getElementById('rsvp_submit').remove();}"></iframe>
 						<form class="contact-form" action="https://docs.google.com/forms/d/e/1FAIpQLSfCSAUZBTimYgcGDo0lw-_vXTyPHs_ggl0c8ZLBgDy5uRQ_iA/formResponse" method="post" target="hidden_iframe" onsubmit="submitted=true;">
 							<p><input type="text" name="entry.326183837" class="name" placeholder="Full Name*"></p>
 							<select class="attend" name="entry.1321249259">
@@ -396,7 +396,8 @@
 							<p><input type="text" name="entry.1134795908" class="guests" placeholder="Guest(s)*"></p>
 							<p><input type="text" name="entry.1613076427" class="email" placeholder="Email*"></p>
 							<p><input type="text" name="entry.182887648" class="address" placeholder="Mailing Address"></p>
-							<button type="submit" value="send">Send RSVP</button>
+							<p><input type="text" name="entry.1718973532" class="address" placeholder="Afterparty Song Requests"></p>
+							<button id="rsvp_submit" type="submit" value="send">Send RSVP</button>
 						</form>
 
 
