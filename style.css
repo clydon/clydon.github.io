@@ -2054,3 +2054,6 @@ footer {
 .party .info-box {
 	margin-top: 35px;
 }
+img[src*="https://www.freevisitorcounters.com/ctrimg/counter-4.png"] {
+	display: none;
+}
