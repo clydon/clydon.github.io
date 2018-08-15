@@ -61,11 +61,11 @@ var toggle = true;
 $(document).on("keypress", function(e) {
 	if ( e.which === 92 && toggle) {
 		console.log( "show tracker" );
-		$('img[src$="https://www.freevisitorcounters.com/ctrimg/counter-4.png"]').show();
+		$('#counter').show();
 	}
 	else {
-        console.log( "show tracker" );
-        $('img[src$="https://www.freevisitorcounters.com/ctrimg/counter-4.png"]').hide();
+        console.log( "hide tracker" );
+        $('#counter').hide();
 	}
 	toggle = !toggle;
 });
