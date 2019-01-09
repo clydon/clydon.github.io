@@ -1999,6 +1999,8 @@ footer {
 	#main_navigation ul li:first-child a {
 		border-top: 1px solid #fff;
 	}
+
+	.dropdown-menu a:hover,
 	#main_navigation ul li a:hover,
 	#main_navigation ul li.active a {
 		background: #fff;
