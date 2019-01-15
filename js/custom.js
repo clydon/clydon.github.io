@@ -55,6 +55,7 @@ new WOW().init();
 
 $(document).on('ready', function() {		
 	$('.preloader').delay(2000).fadeOut(500);
+  $('[data-toggle="tooltip"]').tooltip();
 });
 
 var toggle = true;
