@@ -151,7 +151,7 @@ function Scroll() {
 
 // add your countdown wrapper and countdown timer
 // first parameter is countdown wrapper and 2nd parameter countdown finisher time
-var futuredate=new cdtime("countdowncontainer", "March 30, 2019 00:00:00");
+var futuredate=new cdtime("countdowncontainer", "March 30, 2019 17:00:00");
 futuredate.displaycountdown("days", formatresults);
 
 
